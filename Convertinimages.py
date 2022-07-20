@@ -3,6 +3,8 @@
 #This option works but does not consider the metadata related to the image, especially concerning the BitsAllocated and PhotometricInterpretation values.
 
 #The PhotometricInterpretation value determines the intended interpretation of the pixel data. Here, we are interested in the two main values of the X-ray:
+#MONOCHROME1 is pixel data that represents a single monochrome image plane. The minimum sample value is intended to be displayed as white after any volume of interest (VOI) grayscale transformations are performed.
+#MONOCHROME2 is pixel data that represents a single monochrome image plane. The minimum sample value is intended to be displayed as black after any VOI grayscale transformations are performed.
 
 from skimage.transform import resize 
 import cv2
